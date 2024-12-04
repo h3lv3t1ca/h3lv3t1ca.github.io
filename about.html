@@ -22,18 +22,19 @@
 
     </header>
 
-    <nav>
-    <ul>
-        <li><a href="updates.html">Updates</a></li>
-        &nbsp;
-        <li><a href="storelinks.html">Store Links</a></li>
-        &nbsp;
-        <li><a href="suggestion.html">Suggestions</a></li>
-        &nbsp;
-        <li><a href="about.html">About</a></li>
-    </ul>
-    </nav>
-
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="storelinks.html">Store Links</a></li>
+            <li><a href="suggestion.html">Suggestions</a></li>
+            <li><a href="about.html">About</a></li>
+    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+                <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+        </nav>
 <main>
     <div id="about">
         <h2>About</h2>
@@ -55,5 +56,18 @@
     </ul>
 </footer>
 
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += "responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
+
