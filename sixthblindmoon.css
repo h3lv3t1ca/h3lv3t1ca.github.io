@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 2%;
     height: 100%;
 }
 
@@ -38,8 +38,9 @@ body {
 }
 
 /* for homepage */
-#suggestad {
-    min-width: 250px;
+h2 {
+  color: #000;
+  font-size: large;
 }
 #homecontainer {
   display: flex;
@@ -55,7 +56,10 @@ body {
   text-decoration: none;
 }
 #homecontainer img {
-  width: 200px;
+  width: 50%;
+}
+#suggestad {
+  width: 300%;
 }
 a {
   color: #000000;
@@ -64,22 +68,22 @@ a {
   display: flex;
   justify-content: flex-start;
   min-width: 25%;
-  padding: 1em;
+  padding: 2%;
   background-color: aliceblue;
   color: #333;
   text-decoration: none;
-img {width: 100px;}
+img {width: 15%;}
 }
 #recentproducthome {
     display: flex;
     justify-content: flex-start;
     min-width: 25%;
-    padding: 1em;
-    margin-bottom: 20px;
+    padding: 2%;
+    margin-bottom: 3%;
     background-color: aliceblue;
     color: #333;
     text-decoration: none;
- img {width: 100px;}
+ img {width: 15%;}
 }
 #buttonsandinfo {
     font-family: 'Courier New', Courier, monospace;
@@ -93,9 +97,10 @@ img {width: 100px;}
 footer {
     background-image: linear-gradient(to left, #63729b, #cfd5e4);
     background-color: #cfd5e4;
-    padding: 5px;
+    padding: 1%;
     font-family: 'Courier New', Courier, monospace;
-    padding-left: 20px;
+    padding-left: 2%;
+    margin: auto;
 }
 footer li {
     text-decoration: none;
@@ -103,11 +108,14 @@ footer li {
 footer ul {
     list-style-type: none;
 }
+#suggestionfooter {
+  width: 80%;
+}
 
 /* for update page */
 #updatepost {
     background-color: #96a6cf;
-    margin: 10px;
+    margin: 1%;
     font-family: 'Courier New', Courier, monospace;
     padding: 1em;
 }
@@ -123,7 +131,7 @@ footer ul {
 }
 
 /* small display*/
-@media all and (max-width:500px) {
+@media screen and (max-width:400px) {
   header {
     max-height: 100px;
   }
@@ -133,18 +141,27 @@ footer ul {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-auto-flow: row;
     margin-bottom: 100px;
   }
   .grid-item {
+    display: grid;
+    grid-auto-flow: row;
     align-items: center;
   }
   body {
-    width: 500px;
+    height: 100%;
+    font-size: 16px;
   }
   .grid-item img {
     align-items: center;
     min-width: 200px;
+  }
+  div {
+    height: 100%;
+  }
+  main {
+    height: 100%;
   }
 }
 
