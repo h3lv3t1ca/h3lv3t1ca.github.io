@@ -70,9 +70,7 @@ a {
   min-width: 25%;
   padding: 2%;
   background-color: aliceblue;
-  color: #333;
   text-decoration: none;
-img {width: 15%;}
 }
 #recentproducthome {
     display: flex;
@@ -81,9 +79,7 @@ img {width: 15%;}
     padding: 2%;
     margin-bottom: 3%;
     background-color: aliceblue;
-    color: #333;
     text-decoration: none;
- img {width: 15%;}
 }
 #buttonsandinfo {
     font-family: 'Courier New', Courier, monospace;
